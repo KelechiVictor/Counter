@@ -1,0 +1,40 @@
+form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  top: 50%;
+  left: 50%;
+  /*transform: translate(-50%, -50%);*/
+  
+}
+.container-1{
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  height: 50vh;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #fff;
+  border-radius: 30px;
+  height: 50vh;
+  padding-top: 40px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  /*margin-right: -4px;*/
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  /*margin-left: -4px;*/
+  border-radius: 0 8px 8px 0;
+}
+
+input{
+  border-style: none;
+}
