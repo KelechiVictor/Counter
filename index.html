@@ -4,24 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/Counter/style.css" type="text/css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-  <title>Number Counter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Project Counter</title>
 </head>
 
 <body>
-  <form>
-    <div class="container-1">
-      <div>
-        <button type="submit" class="btn btn-danger" id="decrease">decrease</button>
-      </div>
-      <input type="number" id="number" value="0" />
-      <div>
-        <button type="submit" class="btn btn-success" id="increase">increase</button>
-      </div>
-    </div>
-  </form>
-  <script src="/Counter/script.js"></script>
-</body>
+  <h1>Counter</h1>
+  
+  <p class="counter-preview">0</p>
 
-</html>
+  <div class="buttons" id="allBtns">
+    <button class="decrement btn btn-danger" id="decrement">Decrement</button>
+    <button class="reset btn btn-warning" id="reset">Reset</button>
+    <button class="increment btn btn-primary" id="increment">Increment</button>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html

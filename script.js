@@ -1,57 +1,18 @@
-/*const decrease = document.getElementById('decrease');
-const reset = document.getElementById('number');
-const increase = document.getElementById('increase');
+const display = document.querySelector('.counter-preview');
+const allBtns = document.querySelector('#allBtns');
 
-let counter = 0;
+allBtns.addEventListener('click', counter);
 
-decrease.addEventListener('click', function(){
-  counter -=1;
-  number.innerHtml = counter;
-});
+let value = 0;
 
-reset.addEventListener('click', function(){
-  counter = 0;
-  number.innerHtml = counter;
-});
-
-increase.addEventListener('click', function(){
-  counter +=1;
-  number.innerHtml = counter;
-});*/
-
-
-/*const reset = document.getElementById('number');
-const increaser = document.getElementById('increase');
-const decreaser = document.getElementById('decrease');
-
-
-increaser.addEventListener('click', function() {
-  reset.stepUp();
-}, false);
-
-decreaser.addEventListener('click', function() {
-  reset.stepDown();
-  reset.innerHTML.fontcolor = red;
-}, false);*/
-
-let incBtn = document.querySelector('#increase');
-let decBtn = document.querySelector('#decrease');
-let inputEl = document.querySelector('#number');
-
-let counter = 0;
-
-incBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    counter += 1;
-    inputEl.value = counter;
-})
-
-
-decBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    counter -= 1;
-    inputEl.value = counter;
-    if (counter < 0) {
-      inputEl.innerHTML.fontcolor = 'red';
-    }
-})
+function counter(e) {
+  const btn = e.target.id;
+  if (btn === 'increment') {
+    value += 1;
+  } else if (btn === 'decrement') {
+    value -= 1;
+  } else {
+    value = 0;
+  }
+  display.textContent = value;
+}
